@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transform: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+/* HOMEPAGE */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: none;
+  height: 100vh;
+  background: url("images/homebg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.home h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 1px;
+  color: rgba(254, 249, 243, 255);
+  padding-top: 200px;
+}
+
+.home p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: none;
+  color: rgba(254, 249, 243, 255);
+}
+
+.button-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: rgba(254, 249, 243, 255);
+  color: black;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  color: rgba(254, 249, 243, 255);
+  background-color: transparent;
+  border: 0.2rem solid rgba(254, 249, 243, 255);
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: rgba(254, 249, 243, 255);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: green;
+}
+
+.header.scrolled .navbar a {
+  color: black;
+}
+
+.logo {
+  max-height: 50px;
+  object-fit: contain;
+}
+
+/* BENEFIT */
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  height: 100vh;
+  background: rgba(254, 249, 243, 255) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 50px;
+  min-height: 100%;
+}
+
+/* CARD SECTION */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: #333;
+}
